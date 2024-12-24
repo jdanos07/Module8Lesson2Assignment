@@ -1,5 +1,89 @@
-Task 4: Interactive Form for User Feedback
+<!--Task 4: Interactive Form for User Feedback
 Develop a feedback form where users can provide comments, ratings, or suggestions 
 about the entertainment content. Use CSS pseudoclasses to style form elements, 
 such as text fields and submit buttons, with hover effects or transitions to 
-make the form visually appealing and user-friendly.
+make the form visually appealing and user-friendly.-->
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta name="veiwport" content="width-device-width, intial-scal-1.0">
+    <title> Feed Back Form </title>
+    <style> 
+    a {
+        color: rgb(15, 14, 14);
+        display: inline-block;
+        text-align: center;
+        background-color: brown;
+        border: none;
+        width:fit-content;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 2%;
+        margin-top: 2%;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: darkgrey; 
+        transform: scale(1.05);
+        text-decoration-line: underline;
+    }
+    label {
+        font-weight: bold;
+    }
+    textarea:hover {
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-bottom: 5px;
+        transform: scale(1.25)
+
+    }
+    fieldset {
+        width: fit-content;
+        margin: 5px;
+        padding: 5px;
+        padding-right: 10px;
+    }
+    input {
+        margin-bottom: 5px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h2>Suggestions & Ratings</h2>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Name" required><br>
+
+    <label for="general_suggestions">Suggestions:</label><br>
+    <textarea id="general_suggestions" name="general_suggestions" placeholder="List General Suggestions" required></textarea><br>
+
+    <label for="specific_suggetsions">Specific Suggestions:</label><br>
+    <textarea id="specific_suggetsions" name="specific_suggetsions" placeholder="List Specific Suggestions" required></textarea><br>
+
+    <label for="rating">Rating:</label>
+        <fieldset aria-labelledby="rating">
+            <input type="radio" id="1" name="rating" value="rating" required>
+            <label for="1">1</label>
+
+            <input type="radio" id="2" name="rating" value="2" required>
+            <label for="2">2</label>
+
+            <input type="radio" id="3" name="rating" value="3" required>
+            <label for="3">3</label>
+
+            <input type="radio" id="4" name="rating" value="4" required>
+            <label for="4">4</label>
+
+            <input type="radio" id="5" name="rating" value="5" required>
+            <label for="5">5</label>
+        </fieldset>
+    
+
+    <button type="submit">Submit Recipe</button><br>
+
+    <a href="./Task1.html">Return To Main Page</a>
+</body>
